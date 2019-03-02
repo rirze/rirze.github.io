@@ -18,10 +18,10 @@ Author URI: http://www.AetherThemes.com
 	-Footer
 	=Flakes
 	=Responsive Styles
- 	=Animations
- 	=404
+	=Animations
+	=404
 
- 	=Since 1.01
+	=Since 1.01
 */
 
 
@@ -54,6 +54,15 @@ h1 {
 	line-height: 1em;
 }
 
+h12 {
+	font-size: 30px;
+	color: #272727;
+	font-family: "Montserrat", arial, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	line-height: 1em;
+}
 h2 {
 	font-size: 24px;
 	color: #272727;
@@ -73,7 +82,7 @@ h3, h4 {
 }
 
 h3 {
-	font-size: 12px;	
+	font-size: 12px;
 }
 
 h4 {
@@ -86,7 +95,7 @@ p {
 	line-height: 1.7em;
 }
 
-.dark h1, .dark h2, .dark h3, .dark h4 { color: #fff; } 
+.dark h1, .dark h12, .dark h2, .dark h3, .dark h4 { color: #fff; }
 .dark p { color: #bebebe; }
 
 
@@ -207,7 +216,7 @@ p { margin: 10px 0; }
 -------------------------------------------------------------- */
 #hero {
 	background: #f2f2f2;
-	text-align: center;		
+	text-align: center;
 	overflow: hidden;
 	display: block;
 	width: 100%;
@@ -235,10 +244,10 @@ p { margin: 10px 0; }
 			transform: translate3d(0,0,0);
 	-webkit-transform-style: preserve-3d;
 	   -moz-transform-style: preserve-3d;
-		 	transform-style: preserve-3d;
+			transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
 	   -moz-backface-visibility: hidden;
-		 	backface-visibility: hidden;
+			backface-visibility: hidden;
 }
 
 /* Call to Action */
@@ -256,18 +265,18 @@ p { margin: 10px 0; }
 
 	-webkit-transition: all 0.3s ease-in-out;
 	   -moz-transition: all 0.3s ease-in-out;
-	   	-ms-transition: all 0.3s ease-in-out;
-	   	 -o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
 			transition: all 0.3s ease-in-out;
-	
+
 	/* Animation */
 	-webkit-animation-name: bounce;
- 	      	animation-name: bounce;
+		animation-name: bounce;
   -webkit-transform-origin: center bottom;
-  		  transform-origin: center bottom;
+		  transform-origin: center bottom;
 
-	-webkit-animation: bounce 1.5s infinite; 
-	   -moz-animation: bounce 1.5s infinite; 
+	-webkit-animation: bounce 1.5s infinite;
+	   -moz-animation: bounce 1.5s infinite;
 		-ms-animation: bounce 1.5s infinite;
 		 -o-animation: bounce 1.5s infinite;
 			animation: bounce 1.5s infinite;
@@ -343,7 +352,7 @@ p { margin: 10px 0; }
 			-ms-transform: scale(0.6,0.6);
 				transform: scale(0.6);
 	}
-	.line { margin-top: 10px; }	
+	.line { margin-top: 10px; }
 	#action { bottom: 20px; }
 }
 
@@ -394,8 +403,8 @@ p { margin: 10px 0; }
 	position: relative;
 	-webkit-transition: all 0.3s ease-in-out;
 	   -moz-transition: all 0.3s ease-in-out;
-	   	-ms-transition: all 0.3s ease-in-out;
-	   	 -o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
 			transition: all 0.3s ease-in-out;
 }
 
@@ -466,8 +475,8 @@ fieldset input, fieldset textarea {
 	-webkit-font-smoothing: antialiased;
 	-webkit-transition: all 0.3s ease-in-out;
 	   -moz-transition: all 0.3s ease-in-out;
-	   	-ms-transition: all 0.3s ease-in-out;
-	   	 -o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
 			transition: all 0.3s ease-in-out;
 }
 
@@ -501,7 +510,7 @@ fieldset label {
 	-webkit-font-smoothing: antialiased;
 
 	/* Style */
-	display: inline-block;	
+	display: inline-block;
 	color: #f2f2f2;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 9px;
@@ -516,8 +525,8 @@ fieldset label {
 	border: 2px solid #272727;
 	-webkit-transition: all 0.3s ease-in-out;
 	   -moz-transition: all 0.3s ease-in-out;
-	   	-ms-transition: all 0.3s ease-in-out;
-	   	 -o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
 			transition: all 0.3s ease-in-out;
 }
 
@@ -531,7 +540,7 @@ fieldset label {
 	padding-top: 20px;
 }
 
-#success p { 
+#success p {
 	color: #00b426;
 	font-style: italic;
 	padding: 0;
@@ -549,7 +558,7 @@ label.error {
 	color: #e72e62;
 	font-size: 9px;
 	text-transform: uppercase;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 }
 
 
@@ -565,7 +574,7 @@ form .text {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	padding: 15px 0px 15px 15px;	
+	padding: 15px 0px 15px 15px;
 	background: transparent;
 	border: 1px solid rgba(39,39,39,.2);
 	border-radius: 0px;
@@ -596,7 +605,7 @@ form .submit {
 	-webkit-font-smoothing: antialiased;
 
 	/* Style */
-	display: inline-block;	
+	display: inline-block;
 	color: #f2f2f2;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 9px;
@@ -611,8 +620,8 @@ form .submit {
 	border: 2px solid #272727;
 	-webkit-transition: all 0.3s ease-in-out;
 	   -moz-transition: all 0.3s ease-in-out;
-	   	-ms-transition: all 0.3s ease-in-out;
-	   	 -o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
 			transition: all 0.3s ease-in-out;
 }
 
@@ -684,7 +693,7 @@ form .submit:hover {
 
 .social-list li {
 	position: relative;
-	margin: 15px 0; 
+	margin: 15px 0;
 	display: inline-block;
 	width: 100%;
 }
@@ -794,7 +803,7 @@ form .submit:hover {
 	display: none;
 }
 
-.depth-2.flake1 { 
+.depth-2.flake1 {
 	display: none;
 }
 
@@ -806,17 +815,17 @@ form .submit:hover {
 	display: none;
 }
 
-.depth-1.flake2 { 
+.depth-1.flake2 {
 	position: absolute;
 	right: 40%;
 	top: 50%;
 }
 
-.depth-1.flake3 { 
+.depth-1.flake3 {
 	display: none;
 }
 
-.depth-1.flake4 { 
+.depth-1.flake4 {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -855,7 +864,7 @@ form .submit:hover {
 		display: none;
 	}
 
-	.depth-2.flake1 { 
+	.depth-2.flake1 {
 		display: none;
 	}
 
@@ -867,17 +876,17 @@ form .submit:hover {
 		display: none;
 	}
 
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		position: absolute;
 		right: 40%;
 		top: 40%;
 	}
 
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: none;
 	}
 
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -936,17 +945,17 @@ form .submit:hover {
 		display: none;
 	}
 
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
 
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: none;
 	}
 
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		display: none;
 	}
 }
@@ -996,17 +1005,17 @@ form .submit:hover {
 		display: none;
 	}
 
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
 
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: none;
 	}
 
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		display: none;
 	}
 }
@@ -1073,14 +1082,14 @@ form .submit:hover {
 		animation: wave 5s 0.1s infinite linear;
 	}
 
-	.depth-2.flake1 { 
+	.depth-2.flake1 {
 		display: block;
 		position: absolute;
 		right: 40%;
 		top: 40%;
 	}
 
-	.depth-2.flake2 { 
+	.depth-2.flake2 {
 		display: none;
 	}
 
@@ -1097,20 +1106,20 @@ form .submit:hover {
 		bottom: 20%;
 	}
 
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
 
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: block;
 		position: absolute;
 		bottom: 20%;
 		right: 40%;
 	}
 
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		display: block;
 		right: 40%;
 		top: 25%;
@@ -1152,14 +1161,14 @@ form .submit:hover {
 		bottom: 40%;
 	}
 
-	.depth-2.flake1 { 
+	.depth-2.flake1 {
 		display: block;
 		position: absolute;
 		right: 40%;
 		top: 40%;
 	}
 
-	.depth-2.flake2 { 
+	.depth-2.flake2 {
 		display: none;
 	}
 
@@ -1170,20 +1179,20 @@ form .submit:hover {
 		bottom: 30%;
 	}
 
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
 
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: block;
 		position: absolute;
 		bottom: 20%;
 		right: 40%;
 	}
 
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		display: block;
 		right: 40%;
 		top: 25%;
@@ -1226,14 +1235,14 @@ form .submit:hover {
 		bottom: 40%;
 	}
 
-	.depth-2.flake1 { 
+	.depth-2.flake1 {
 		display: block;
 		position: absolute;
 		right: 40%;
 		top: 40%;
 	}
 
-	.depth-2.flake2 { 
+	.depth-2.flake2 {
 		display: none;
 	}
 
@@ -1244,20 +1253,20 @@ form .submit:hover {
 		bottom: 30%;
 	}
 
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		display: block;
 		left: 20%;
 		top: 30%;
 	}
 
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: block;
 		position: absolute;
 		bottom: 30%;
 		right: 40%;
 	}
 
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		display: block;
 		right: 40%;
 		top: 25%;
@@ -1428,11 +1437,11 @@ form .submit:hover {
 	padding: 15px 35px;
     -webkit-box-sizing: content-box;
        -moz-box-sizing: content-box;
-            box-sizing: content-box;
+	    box-sizing: content-box;
     -webkit-transition: all 0.3s ease-in-out;
 	   -moz-transition: all 0.3s ease-in-out;
-	   	-ms-transition: all 0.3s ease-in-out;
-	   	 -o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
 			transition: all 0.3s ease-in-out;
 }
 
