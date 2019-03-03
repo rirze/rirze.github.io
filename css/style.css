@@ -27,9 +27,9 @@ Author URI: http://www.AetherThemes.com
 
 /* =Common Styles
 -------------------------------------------------------------- */
-html {
-    scroll-behavior: smooth;
-}
+/* html { */
+/*     scroll-behavior: smooth; */
+/* } */
 
 body {
 	background: #f6f6f6;
