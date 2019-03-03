@@ -3,55 +3,55 @@
 function initializeSite() {
     "use strict";
 
-    // Init effect 
+    // Init effect
     $('#scene').parallax();
 
     // Center and outline
     (function() {
-        function centerInit(){
-            var hero            = $('#hero'),
-                sphere          = $('.sphere'),
-                sphereMargin    = ($(window).height() - sphere.height()) / 2,
-                heroContent     = $('.hero-content'),
-                contentMargin   = ($(window).height() - heroContent.height()) / 2;
+	function centerInit(){
+	    var hero            = $('#hero'),
+		sphere          = $('.sphere'),
+		sphereMargin    = ($(window).height() - sphere.height()) / 2,
+		heroContent     = $('.hero-content'),
+		contentMargin   = ($(window).height() - heroContent.height()) / 2;
 
-            hero.css ({
-                height : $(window).height() + "px"
-            });
+	    hero.css ({
+		height : $(window).height() + "px"
+	    });
 
-            sphere.css({
-                "margin-top" : sphereMargin + "px"
-            });
+	    sphere.css({
+		"margin-top" : sphereMargin + "px"
+	    });
 
-            heroContent.css({
-                "margin-top" : contentMargin + "px"
-            });
-        }
+	    heroContent.css({
+		"margin-top" : contentMargin + "px"
+	    });
+	}
 
-        $(document).ready(centerInit);
-        $(window).resize(centerInit);
+	$(document).ready(centerInit);
+	$(window).resize(centerInit);
     })();
 
     // Local scroll
     $('#hero').localScroll({
-        duration:1000
+	duration:1000
     });
 
     // Light box init
     $('.lightbox').magnificPopup({
-        type: 'image',
-         mainClass: 'mfp-with-zoom mfp-fade',
+	type: 'image',
+	 mainClass: 'mfp-with-zoom mfp-fade',
 
-        zoom: {
-            enabled: true,
+	zoom: {
+	    enabled: true,
 
-            duration: 300,
-            easing: 'ease-in-out',
+	    duration: 300,
+	    easing: 'ease-in-out',
 
-            opener: function(openerElement) {
-                return openerElement.is('img') ? openerElement : openerElement.find('img');
-            }
-        }
+	    opener: function(openerElement) {
+		return openerElement.is('img') ? openerElement : openerElement.find('img');
+	    }
+	}
     });
 
 };
@@ -72,13 +72,13 @@ $(window).load(function(){
 -------------------------------------------------------------- */
 $(window).load(function(){
 
-    //SKROLLR 
+    //SKROLLR
     if (Modernizr.touch) {
-        skrollr.init().destroy();
-    } else {   
-        skrollr.init({
-            forceHeight: false
-        });  
+	skrollr.init().destroy();
+    } else {
+	skrollr.init({
+	    forceHeight: false
+	});
     }
 
 });
