@@ -27,6 +27,10 @@ Author URI: http://www.AetherThemes.com
 
 /* =Common Styles
 -------------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 	background: #f6f6f6;
 	color: #777777;
@@ -43,7 +47,7 @@ section { overflow: hidden; }
 
 /* =Typography
 -------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, p { margin: 0; }
+h1, h12, h2, h3, h4, h5, h6, p { margin: 0; }
 
 h1 {
 	color: #272727;
@@ -94,6 +98,8 @@ p {
 	font-size: 16px;
 	line-height: 1.7em;
 }
+
+a { color: inherit; }
 
 .dark h1, .dark h12, .dark h2, .dark h3, .dark h4 { color: #fff; }
 .dark p { color: #bebebe; }
